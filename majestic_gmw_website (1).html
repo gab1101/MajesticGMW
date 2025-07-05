@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Majestic Granite & Marble Works</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: url('https://cdn.pixabay.com/photo/2016/11/19/15/20/black-1838957_1280.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+      animation: fadeIn 2s ease-in-out;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    header, footer {
+      background-color: rgba(0, 0, 0, 0.7);
+      color: white;
+      text-align: center;
+      padding: 1em 0;
+      animation: slideDown 1s ease-in-out;
+    }
+    @keyframes slideDown {
+      from { transform: translateY(-100%); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #00aced;
+    }
+    .hero {
+      background-color: rgba(0, 0, 0, 0.6);
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+      animation: fadeInUp 1.5s ease-in-out;
+    }
+    @keyframes fadeInUp {
+      from { transform: translateY(20px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+    .section {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 50px 20px;
+      max-width: 1000px;
+      margin: auto;
+      border-radius: 10px;
+      animation: fadeIn 2s ease-in-out;
+    }
+    .card {
+      background: rgba(255, 255, 255, 0.9);
+      color: black;
+      margin: 10px;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      animation: bounceIn 1s ease forwards;
+    }
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px rgba(255,255,255,0.3);
+    }
+    @keyframes bounceIn {
+      0% { transform: scale(0.8); opacity: 0; }
+      60% { transform: scale(1.05); opacity: 1; }
+      100% { transform: scale(1); }
+    }
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    .gallery img {
+      width: 100%;
+      max-width: 300px;
+      border-radius: 8px;
+      margin: 10px;
+      transition: transform 0.3s ease;
+      animation: zoomIn 1.2s ease-in-out;
+    }
+    .gallery img:hover {
+      transform: scale(1.1);
+    }
+    @keyframes zoomIn {
+      from { transform: scale(0.8); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      animation: fadeIn 2s ease-in-out;
+    }
+    input, textarea, select {
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      transition: box-shadow 0.3s ease;
+    }
+    input:focus, textarea:focus, select:focus {
+      box-shadow: 0 0 5px #00aced;
+      outline: none;
+    }
+    button {
+      padding: 10px;
+      background: #333;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s, transform 0.2s;
+    }
+    button:hover {
+      background: #555;
+      transform: translateY(-2px);
+    }
+    #chatbox {
+      border: 1px solid #ccc;
+      padding: 10px;
+      height: 200px;
+      overflow-y: auto;
+      background: white;
+      color: black;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+    #chat-input {
+      display: flex;
+      gap: 10px;
+      margin-top: 10px;
+    }
+    #chat-input input {
+      flex: 1;
+    }
+    .social-link {
+      margin-top: 10px;
+    }
+    .social-link a {
+      color: #00aced;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    .social-link a:hover {
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <!-- Remaining HTML stays unchanged -->
